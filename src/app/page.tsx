@@ -1,10 +1,15 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { CollegeCard } from '@/components/colleges/CollegeCard'
-import { Filters } from '@/components/colleges/Filters'
-import { useSaved } from '@/hooks/useSaved'
-import { College } from '@/types/college'
+// import { CollegeCard } from '@/components/colleges/CollegeCard'
+import { CollegeCard } from '../../components/college/CollegeCard'
+// import { Filters } from '@/components/colleges/Filters'
+import { Filters } from '../../components/college/Filters'
+// import { useSaved } from '@/hooks/useSaved'
+import { useSaved } from '../../hooks/useSaved'
+// import { College } from '@/types/college'/
+import { College } from '../../types/college'
+
 
 export default function CollegesPage() {
   const [colleges, setColleges] = useState<College[]>([])
